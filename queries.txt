@@ -1,0 +1,9 @@
+1.CREATE DATABASE school_system;
+2.create TABLE students(id integer(11) unique not null,name varchar(100),phone varchar(15),birthdate date,grade integer(11),course_id integer(11));
+3.create TABLE courses(id integer(11) unique not null,name varchar(100),instractor_id integer(11),duration time);
+4.create TABLE instractorss(id integer(11) unique not null,name varchar(100),phone varchar(15),student_id integer(11));
+5.create TABLE enrollments(id integer(11) unique not null,student_id integer(11),phone varchar(15),course_id integer(11),enrollment_date date);
+6.insert into students values(1,'asmaa helmi','01090360968','2000-11-9',6,2), (2,'salma mohamed','0102365418','2000-12-25',6,4), (3,'ali ahmed','015642895','2005-8-8',3,1), (4,'eman ezz','012456398','2000-7-27',6,2), (5,'ahmed mohamed','0108194482','1996-8-17',10,2);
+7.insert into courses values(1,'Data Base',2,'14:50,00'), (2,'PHP',3,'10:45,00'), (3,'.net',1,'20:40,20'), (4,'Flutter',4,'16:50,00');
+8.insert into enrollments values(1,5,'0102654893','2026-03-27'),
+(2,2,'0102365418','2026-03-21'),(3,4,'012456398','2026-03-20'),(4,1,'01090360968','2026-03-20');
